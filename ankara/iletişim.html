@@ -1,0 +1,175 @@
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Ankara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" class="logo">
+            <img src="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" alt="logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Anasayfa</a>
+            <a href="hakkimda.html">Hakkımda</a>
+
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Yerler</a>
+                <ul class="dropdown-content">
+                    <li><a href="müzeler.html">Müzeler</a></li>
+                    <li><a href="parklar.html">Parklar</a></li>
+                    <li><a href="tarihi.html">Tarihi</a></li>
+                </ul>
+            </li>
+
+            <a href="galeri.html">Galeri</a>
+            <a href="iletişim.html">İletişim</a>
+            <a href="profil.html">Profil</a>
+        </nav>
+
+        <div class="buttons">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Ara..."
+                    onkeypress="if(event.key === 'Enter') aramaYap()" style="display: none; font-size: 1.5rem;">
+
+                <button onclick="aramaYap()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="contact-section">
+        <h1>İletişim</h1>
+        <h2>📩 Bize Ulaşın</h2>
+        <p>Ankara hakkındaki her türlü soru, öneri ve işbirliği talepleriniz için aşağıdaki formu doldurabilir veya
+            doğrudan iletişim bilgilerimizi kullanabilirsiniz.</p>
+
+        <div class="contact-container">
+            <form action="gonderme_adresi" method="POST" class="contact-form"
+                onsubmit="return showThanksMessage(event)">
+
+                <label for="isim">Adınız Soyadınız *</label>
+                <input type="text" id="isim" name="isim" required> 
+
+                <label for="email">E-posta Adresiniz *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="konu">Konu</label>
+                <input type="text" id="konu" name="konu">
+
+                <label for="mesaj">Mesajınız *</label>
+                <textarea id="mesaj" name="mesaj" rows="6" required></textarea>
+
+                <button type="submit" class="submit-btn">Gönder</button>
+
+                <button type="reset" class="submit-btn">Temizle</button>
+            </form>
+
+
+            <div id="thanks-message"
+                style="display:none; text-align:center; padding: 20px; color: #4CAF50; font-size: 1.5em; font-weight: bold; background-color: #E8F5E9; border-radius: 8px; margin-top: 20px;">
+                Teşekkürler! Mesajınız başarıyla iletildi.
+            </div>
+
+            <script>
+                function showThanksMessage(event) {
+                    event.preventDefault();   
+
+                    document.querySelector('.contact-form').style.display = 'none';
+
+                    document.getElementById('thanks-message').style.display = 'block';
+                }
+            </script>
+
+
+
+            <div class="contact-info">
+                <h3>İletişim Bilgileri</h3>
+                <p>
+                    <strong>Adres:</strong> <br>
+                    Çankaya/Ankara, Türkiye
+                </p>
+                <p>
+                    <strong>Telefon:</strong> <br>
+                    +90 XXX XXX XX XX
+                </p>
+                <p>
+                    <strong>E-posta:</strong> <br>
+                    info@ankararehberi.com
+                </p>
+
+                <div class="social-links">
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col about-col">
+                <img src="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" alt="Ankara Rehberi Logo"
+                    class="footer-logo">
+                <p>Ankara'nın tarihi, kültürü ve güncel etkinlikleri hakkında kapsamlı bir rehber. Başkenti keşfetmek
+                    için en doğru adres.</p>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="hakkimda.html">Hakkımızda</a></li>
+                    <li><a href="iletişim.html">İletişim</a></li>
+
+                    <li><a href="galeri.html">Galeri</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col places-col">
+                <h4>Popüler Yerler</h4>
+                <ul>
+                    <li><a href="anitkabir.html">Anıtkabir</a></li>
+                    <li><a href="kale.html">Ankara Kalesi</a></li>
+                    <li><a href="atakule.html">Atakule</a></li>
+                    <li><a href="medeniyetler.html">Anadolu Medeniyetleri Müzesi</a></li>
+                    <li><a href="kugulu.html">Kuğulu Park</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4>Bize Ulaşın</h4>
+                <p><strong>E-posta:</strong> info@ankararehberi.com</p>
+                <p><strong>Telefon:</strong> +90 XXX XXX XX XX</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Ankara Rehberi. Tüm hakları saklıdır.</p>
+            <!-- telif hakkı sembölü -->
+            <p><a href="#">Gizlilik Politikası</a> | <a href="#">Kullanım Koşulları</a></p>
+        </div>
+    </footer>
+
+    <script src="java.js"></script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>

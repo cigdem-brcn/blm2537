@@ -1,0 +1,166 @@
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Ankara</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" class="logo">
+            <img src="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" alt="logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Anasayfa</a>
+            <a href="hakkimda.html">Hakkımda</a>
+
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Yerler</a>
+                <ul class="dropdown-content">
+                    <li><a href="müzeler.html">Müzeler</a></li>
+                    <li><a href="parklar.html">Parklar</a></li>
+                    <li><a href="tarihi.html">Tarihi</a></li>
+                </ul>
+            </li>
+
+            <a href="galeri.html">Galeri</a>
+            <a href="iletişim.html">İletişim</a>
+            <a href="profil.html">Profil</a>
+        </nav>
+
+        <div class="buttons">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Ara..."
+                    onkeypress="if(event.key === 'Enter') aramaYap()" style="display: none; font-size: 1.5rem;">
+
+                <button onclick="aramaYap()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="detay-sayfasi">
+        <section class="yer-baslik">
+            <h1>Anıtkabir</h1>
+            <p class="adres">Anıttepe, Çankaya/Ankara</p>
+        </section>
+
+        <section class="yer-gorsel">
+            <img src="ankara_foto/335143,anitkabirjpg.jpeg" alt="Anıtkabir Manzarası">
+        </section>
+
+        <section class="yer-bilgisi">
+            <h2>Hakkında</h2>
+            <p>Türkiye Cumhuriyeti'nin kurucusu ve ilk Cumhurbaşkanı Mustafa Kemal Atatürk'ün anıt mezarıdır. Türk
+                mimarisinin ve mühendisliğinin modern bir örneği olan Anıtkabir, 15 Haziran 1944'te inşaata başlanmış ve
+                1 Eylül 1953'te tamamlanmıştır. Anıtkabir Kompleksi, Aslanlı Yol, Tören Meydanı, Mozole ve Atatürk ve
+                Kurtuluş Savaşı Müzesi'nden oluşur.</p>
+            <p>Anıtkabir, sadece bir anıt mezar değil, aynı zamanda ulusal bir sembol ve ziyaretçilerin saygı duruşunda
+                bulunduğu bir mekandır.</p>
+
+            <div class="ek-bilgi">
+                <div class="bilgi-kart">
+                    <i class="fas fa-clock"></i>
+                    <h4>Ziyaret Saatleri</h4>
+                    <p>09:00 - 17:00 (Mevsime göre değişebilir)</p>
+                </div>
+                <div class="bilgi-kart">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h4>Giriş Ücreti</h4>
+                    <p>Ücretsiz</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="yer-konum">
+            <h2>Konum</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.7378461816215!2d32.837078600000005!3d39.92488249999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f190a9cea8f%3A0xd3862ea8248d08a0!2sAn%C4%B1tkabir!5e0!3m2!1str!2str!4v1766335373170!5m2!1str!2str"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="kullanici-yorumlari">
+            <h2>Kullanıcı Yorumları (3)</h2>
+            <div class="yorum-formu">
+                <h4>Yorumunuzu Ekleyin</h4>
+                <textarea placeholder="Deneyimlerinizi paylaşın..."></textarea>
+                <div class="derecelendirme">
+                    <span>Puanınız:</span>
+                    <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                        class="far fa-star"></i><i class="far fa-star"></i>
+                </div>
+                <button>Yorumu Gönder</button>
+            </div>
+
+            <script src="java.js"></script>
+            <div class="yorum-listesi">
+                <div class="yorum-kart">
+                    <p class="yorum-yazar">**Mehmet Yılmaz** <span class="yorum-tarih">/ 05.12.2025</span></p>
+                    <p class="yorum-metin">Herkesin hayatında en az bir kez ziyaret etmesi gereken, çok etkileyici ve
+                        huzurlu bir mekan. Tarihi dokusu ve ihtişamıyla büyüleyici.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col about-col">
+                <img src="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" alt="Ankara Rehberi Logo"
+                    class="footer-logo">
+                <p>Ankara'nın tarihi, kültürü ve güncel etkinlikleri hakkında kapsamlı bir rehber. Başkenti keşfetmek
+                    için en doğru adres.</p>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="hakkimda.html">Hakkımızda</a></li>
+                    <li><a href="iletişim.html">İletişim</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col places-col">
+                <h4>Popüler Yerler</h4>
+                <ul>
+                    <li><a href="anitkabir.html">Anıtkabir</a></li>
+                    <li><a href="kale.html">Ankara Kalesi</a></li>
+                    <li><a href="atakule.html">Atakule</a></li>
+                    <li><a href="medeniyetler.html">Anadolu Medeniyetleri Müzesi</a></li>
+                    <li><a href="kugulu.html">Kuğulu Park</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4>Bize Ulaşın</h4>
+                <p><strong>E-posta:</strong> info@ankararehberi.com</p>
+                <p><strong>Telefon:</strong> +90 XXX XXX XX XX</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Ankara Rehberi. Tüm hakları saklıdır.</p>
+            <!-- telif hakkı sembölü -->
+            <p><a href="#">Gizlilik Politikası</a> | <a href="#">Kullanım Koşulları</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Footer yılını otomatik doldurmak için basit bir script (isteğe bağlı)
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

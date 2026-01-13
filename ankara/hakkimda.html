@@ -1,0 +1,148 @@
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Ankara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" class="logo">
+            <img src="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" alt="logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Anasayfa</a>
+            <a href="hakkimda.html">Hakkımda</a>
+
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Yerler</a>
+                <ul class="dropdown-content">
+                    <li><a href="müzeler.html">Müzeler</a></li>
+                    <li><a href="parklar.html">Parklar</a></li>
+                    <li><a href="tarihi.html">Tarihi</a></li>
+                </ul>
+            </li>
+
+            <a href="galeri.html">Galeri</a>
+            <a href="iletişim.html">İletişim</a>
+            <a href="profil.html">Profil</a>
+        </nav>
+
+        <div class="buttons">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Ara..."
+                    onkeypress="if(event.key === 'Enter') aramaYap()" style="display: none; font-size: 1.5rem;">
+
+                <button onclick="aramaYap()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="hakkimda-icerik">
+        <h1>Ankara Rehberi: Başkentin Kalbine Yolculuk</h1>
+
+        <p>
+            Ankara Rehberi, Türkiye Cumhuriyeti'nin başkenti Ankara'nın zengin tarihini, kültürel mirasını ve modern
+            yaşamını keşfetmek isteyen herkes için hazırlanmış kapsamlı bir kaynaktır. Bu site, Ankara'da yaşayanlar ve
+            şehri ziyaret etmeyi planlayanlar için en doğru ve güncel bilgileri tek bir çatı altında toplamayı
+            amaçlamaktadır.
+        </p>
+
+        <h2>Misyonumuz</h2>
+        <p>
+            Misyonumuz, Ankara'nın sadece resmi ve bürokratik yüzünü değil, aynı zamanda gizli kalmış güzelliklerini,
+            tarihi dokusunu, sanatsal etkinliklerini ve lezzet duraklarını da ortaya çıkarmaktır. Şehrin her köşesini
+            detaylıca inceleyerek, kullanıcılarımıza benzersiz ve unutulmaz deneyimler yaşatacak rehberlik sunmayı
+            hedefliyoruz.
+        </p>
+
+        <h2>Neler Sunuyoruz?</h2>
+        <div class="vizyon-kartlari">
+            <div class="kart">
+                <i class="fas fa-landmark"></i>
+                <h3>Detaylı Mekan İncelemeleri</h3>
+                <p>Anıtkabir'den Anadolu Medeniyetleri Müzesi'ne, şehirdeki tüm önemli anıtlar, müzeler, parklar ve
+                    tarihi yerler hakkında derinlemesine bilgi.</p>
+            </div>
+            <div class="kart">
+                <i class="fas fa-utensils"></i>
+                <h3>Gastronomi Rehberi</h3>
+                <p>Ankara mutfağının özel lezzetleri, yöresel yemekler ve en iyi restoran tavsiyeleri ile "Ne Yenir?"
+                    sorusuna yanıt veriyoruz.</p>
+            </div>
+            <div class="kart">
+                <i class="fas fa-route"></i>
+                <h3>Pratik Bilgiler ve İpuçları</h3>
+                <p>Ulaşım, ziyaret saatleri ve giriş ücretleri gibi seyahatinizi kolaylaştıracak tüm pratik bilgileri
+                    sunuyoruz.</p>
+            </div>
+        </div>
+
+        <h2>Ekibimiz</h2>
+        <p>
+            Bu rehber, Ankara'yı tutkuyla seven ve şehrin her detayına hakim gönüllü yazarlar, araştırmacılar ve yerel
+            uzmanlardan oluşan küçük bir ekip tarafından hazırlanmaktadır. Amacımız, bilgiyi güvenilir ve samimi bir
+            dille size ulaştırmaktır.
+        </p>
+
+        <p>
+            Ankara'yı bizimle keşfetmeye hazır mısınız? Başkentin ruhunu birlikte hissedelim!
+        </p>
+
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col about-col">
+                <img src="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" alt="Ankara Rehberi Logo"
+                    class="footer-logo">
+                <p>Ankara'nın tarihi, kültürü ve güncel etkinlikleri hakkında kapsamlı bir rehber. Başkenti keşfetmek
+                    için en doğru adres.</p>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="hakkimda.html">Hakkımızda</a></li>
+                    <li><a href="iletişim.html">İletişim</a></li>
+
+                    <li><a href="galeri.html">Galeri</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col places-col">
+                <h4>Popüler Yerler</h4>
+                <ul>
+                    <li><a href="anitkabir.html">Anıtkabir</a></li>
+                    <li><a href="kale.html">Ankara Kalesi</a></li>
+                    <li><a href="atakule.html">Atakule</a></li>
+                    <li><a href="medeniyetler.html">Anadolu Medeniyetleri Müzesi</a></li>
+                    <li><a href="kugulu.html">Kuğulu Park</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4>Bize Ulaşın</h4>
+                <p><strong>E-posta:</strong> info@ankararehberi.com</p>
+                <p><strong>Telefon:</strong> +90 XXX XXX XX XX</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Ankara Rehberi. Tüm hakları saklıdır.</p>
+            <!-- telif hakkı sembölü -->
+            <p><a href="#">Gizlilik Politikası</a> | <a href="#">Kullanım Koşulları</a></p>
+        </div>
+    </footer>
+
+</body>

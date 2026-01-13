@@ -1,0 +1,444 @@
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Ankara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" class="logo">
+            <img src="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" alt="logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Anasayfa</a>
+            <a href="hakkimda.html">Hakkımda</a>
+
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Yerler</a>
+                <ul class="dropdown-content">
+                    <li><a href="müzeler.html">Müzeler</a></li>
+                    <li><a href="parklar.html">Parklar</a></li>
+                    <li><a href="tarihi.html">Tarihi</a></li>
+                </ul>
+            </li>
+
+            <a href="galeri.html">Galeri</a>
+            <a href="iletişim.html">İletişim</a>
+            <a href="profil.html">Profil</a>
+        </nav>
+
+        <div class="buttons">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Ara..."
+                    onkeypress="if(event.key === 'Enter') aramaYap()" style="display: none; font-size: 1.5rem;">
+
+                <button onclick="aramaYap()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="anasayfa">
+        <div class="content">
+            <h1>ANKARA'YA HOŞ GELDİN</h1>
+        </div>
+    </section>
+
+
+    <section class="popular">
+        <h1>En Popüler Mekanlar</h1>
+
+        <div class="card-list">
+
+            <div class="card">
+                <img src="ankara_foto/anıtkabir_main.jpeg" alt="anitkabir">
+                <span class="kategori">Müze</span>
+                <h3>Anıtkabir</h3>
+                <div class="pop-box">
+                    <a onclick="acModal('anitkabir')" class="buton">Daha Fazla</a>
+                </div>
+            </div>
+
+            <div id="anitkabirModal" class="modal">
+
+                <div class="modal-backdrop" onclick="kapatModal('anitkabir')"></div>
+
+                <div class="modal-content">
+
+                    <span class="close-btn" onclick="kapatModal('anitkabir')">&times;</span>
+
+                    <div class="modal-grid">
+                        <div class="modal-resim-bolumu">
+                            <img src="ankara_foto/anıtkabir_main.jpeg" alt="Anıtkabir">
+                        </div>
+                        <div class="modal-bilgi-bolumu">
+                            <h2>Anıtkabir</h2>
+                            <p>Anıtkabir, Türkiye Cumhuriyeti'nin kurucusu Gazi Mustafa Kemal Atatürk'ün ebedi
+                                istirahatgahıdır. Aynı zamanda Türkiye'nin İkinci Cumhurbaşkanı İsmet İnönü'nün de
+                                mezarı buradadır. Ankara'nın Çankaya ilçesinde, Rasattepe adı verilen bir tepede yer
+                                almaktadır. Anıtkabir, Türk mimarlık tarihinin en önemli anıtsal yapılarından biri
+                                olarak kabul edilir ve her yıl milyonlarca kişi tarafından ziyaret edilmektedir.
+                            </p><br><br>
+                            <p class="adres">Anıttepe, Çankaya/Ankara</p><br>
+                            <h4>Ziyaret Saatleri</h4>
+                            <p>09:00 - 17:00 (Mevsime göre değişebilir)</p><br>
+                            <h4>Giriş Ücreti</h4>
+                            <p>Ücretsiz</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="ankara_foto/ankara kalesi.png" alt="Ankara Kalesi">
+                <span class="kategori">Tarihi</span>
+                <h3>Ankara Kalesi</h3>
+                <div class="pop-box">
+                    <a onclick="acModal('ankara_kalesi')" class="buton">Daha Fazla</a>
+                </div>
+            </div>
+
+            <div id="ankara_kalesiModal" class="modal">
+
+                <div class="modal-backdrop" onclick="kapatModal('ankara_kalesi')"></div>
+
+                <div class="modal-content">
+
+                    <span class="close-btn" onclick="kapatModal('ankara_kalesi')">&times;</span>
+
+                    <div class="modal-grid">
+                        <div class="modal-resim-bolumu">
+                            <img src="ankara_foto/ankara kalesi.png" alt="Ankara Kalesi">
+                        </div>
+                        <div class="modal-bilgi-bolumu">
+                            <h2>Ankara Kalesi</h2>
+                            <p>Ankara Kalesi, şehrin merkezinde, Altındağ ilçesindeki hakim bir tepede yükselen tarihi
+                                bir yapıdır. Kökeni Galatlar dönemine dayanan kalenin günümüzdeki taş duvarları Bizans
+                                ve Selçuklu dönemlerinde yapılan onarımlarla oluşmuştur. Ziyaretçiler, kale içerisindeki
+                                eski Ankara evlerini gezebilir ve surların üzerinden başkentin panoramik manzarasını
+                                izleyebilirler. Ankara'nın tarihi kimliğini yansıtan önemli bir kültürel mirastır.</p>
+                            <br><br>
+                            <p class="adres">Kale, Altındağ/Ankara</p><br>
+                            <h4>Ziyaret Saatleri</h4>
+                            <p>08:00 - 18:00 (Her zaman erişilebilir)</p><br>
+                            <h4>Giriş Ücreti</h4>
+                            <p>Kale içi ücretsiz (Müze veya belirli kısımlar ücretli olabilir)</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="ankara_foto/eymir-golu.jpg" alt="Eymir Gölü">
+                <span class="kategori">PARK</span>
+                <h3>Eymir Gölü</h3>
+                <div class="pop-box">
+                    <a onclick="acModal('eymir_golu')" class="buton">Daha Fazla</a>
+                </div>
+            </div>
+
+            <div id="eymir_goluModal" class="modal">
+
+                <div class="modal-backdrop" onclick="kapatModal('eymir_golu')"></div>
+
+                <div class="modal-content">
+
+                    <span class="close-btn" onclick="kapatModal('eymir-golu')">&times;</span>
+
+                    <div class="modal-grid">
+                        <div class="modal-resim-bolumu">
+                            <img src="ankara_foto/eymir-golu.jpg" alt="Eymir Golu">
+                        </div>
+                        <div class="modal-bilgi-bolumu">
+                            <h2>Eymir Gölü</h2>
+                            <p>Eymir Gölü, Ankara'nın güneyinde, özellikle Orta Doğu Teknik Üniversitesi (ODTÜ) arazisi
+                                sınırları içinde yer alan doğal bir göldür. Şehir merkezinin karmaşasından uzak, sakin
+                                ve huzurlu bir atmosfere sahiptir. Gölet çevresi, bisiklet sürmek, koşu yapmak, piknik
+                                yapmak ve kürek çekmek gibi aktiviteler için popüler bir rekreasyon alanıdır. Ankara'nın
+                                ekolojik çeşitliliği açısından da önemli bir sulak alandır.</p><br><br>
+                            <p class="adres">Gölbaşı, Ankara</p><br>
+                            <h4>Ziyaret Saatleri</h4>
+                            <p>05:00 - 22:00 (Yıl boyu değişebilir)</p><br>
+                            <h4>Giriş Ücreti</h4>
+                            <p>Ücretsiz (Özel araç giriş ücreti olabilir)</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="ankara_foto/kurtuluş parkı.jpg" alt="Kurtuluş Parkı">
+                <span class="kategori">Parklar</span>
+                <h3>Kurtuluş Parkı</h3>
+                <div class="pop-box">
+                    <a onclick="acModal('kurtulus_parki')" class="buton">Daha Fazla</a>
+                </div>
+            </div>
+
+            <div id="kurtulus_parkiModal" class="modal">
+
+                <div class="modal-backdrop" onclick="kapatModal('kurtulus_parki')"></div>
+
+                <div class="modal-content">
+
+                    <span class="close-btn" onclick="kapatModal('kurtulus_parki')">&times;</span>
+
+                    <div class="modal-grid">
+                        <div class="modal-resim-bolumu">
+                            <img src="ankara_foto/kurtuluş parkı.jpg" alt="Kurtulus Parki">
+                        </div>
+                        <div class="modal-bilgi-bolumu">
+                            <h2>Kurtuluş Parkı</h2>
+                            <p>Kurtuluş Parkı, Ankara'nın Çankaya ilçesinde, merkezi bir konumda bulunan büyük bir yeşil
+                                alandır. 1960'lı yıllarda inşa edilmiş olan park, yürüyüş yolları, büyük bir gölet,
+                                çeşitli spor sahaları ve çocuk oyun alanları ile donatılmıştır. Üniversitelere yakınlığı
+                                sayesinde özellikle öğrenciler arasında popüler bir buluşma ve dinlenme noktasıdır.
+                                Şehir içinde nefes almak isteyenler için ideal bir mekandır.</p><br><br>
+                            <p class="adres">Kurtuluş, Çankaya/Ankara</p><br>
+                            <h4>Ziyaret Saatleri</h4>
+                            <p>06:00 - 23:00 (Yıl boyu açıktır)</p><br>
+                            <h4>Giriş Ücreti</h4>
+                            <p>Ücretsiz</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="popular">
+        <h1>Popüler Restoranlar</h1>
+
+        <div class="card-list">
+
+            <div class="card">
+                <img src="ankara_foto/Bizim-Kofteci-Yilmaz-Usta.webp" alt="">
+                <h3>Bizim Köfteci Yılmaz Usta</h3>
+                <div class="pop-box">
+                    <a onclick="acModal('kofteci')" class="buton">Daha Fazla</a>
+                </div>
+            </div>
+
+            <div id="kofteciModal" class="modal">
+
+                <div class="modal-backdrop" onclick="kapatModal('kofteci')"></div>
+
+                <div class="modal-content">
+
+                    <span class="close-btn" onclick="kapatModal('kofteci')">&times;</span>
+
+                    <div class="modal-grid">
+                        <div class="modal-resim-bolumu">
+                            <img src="ankara_foto/Bizim-Kofteci-Yilmaz-Usta.webp" alt="">
+                        </div>
+                        <div class="modal-bilgi-bolumu">
+                            <h2>Bizim Köfteci Yılmaz Usta</h2>
+                            <p> Ankara'da Uzak Doğu mutfağının en popüler temsilcilerinden biridir. Geniş
+                                menüsü suşi, Çin yemekleri, Tayland lezzetleri ve diğer Asya spesiyallerini içerir.
+                                Modern ve şık dekorasyonu ile bilinir ve hem öğle yemeği hem de akşam yemeği için tercih
+                                edilen nezih mekanlardandır. Şehrin farklı bölgelerinde birden fazla şubesi
+                                bulunmaktadır.</p><br><br>
+                            <p class="adres">Gaziosmanpaşa/Ankara (Genel Merkez)</p><br>
+                            <h4>Hizmet Saatleri</h4>
+                            <p>11:30 - 23:00 (Şubeye göre değişebilir)</p><br>
+                            <h4>Fiyat Aralığı</h4>
+                            <p>Ortalama üstü</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="ankara_foto/Pecenek-Doner.webp" alt="pecenek Pecenek-Doner">
+                <h3>Peçenek Döner</h3>
+                <div class="pop-box">
+                    <a onclick="acModal('pecenek')" class="buton">Daha Fazla</a>
+                </div>
+            </div>
+
+            <div id="pecenekModal" class="modal">
+
+                <div class="modal-backdrop" onclick="kapatModal('pecenek')"></div>
+
+                <div class="modal-content">
+
+                    <span class="close-btn" onclick="kapatModal('pecenek')">&times;</span>
+
+                    <div class="modal-grid">
+                        <div class="modal-resim-bolumu">
+                            <img src="ankara_foto/Pecenek-Doner.webp" alt="Pecenek-Doner">
+                        </div>
+                        <div class="modal-bilgi-bolumu">
+                            <h2>Peçenek Döner</h2>
+                            <p>Peçenek Döner, Ankara'nın en köklü ve ünlü dönercilerinden biridir. Geleneksel Türk
+                                dönerini odun ateşinde pişirme yöntemiyle hazırlaması ve et kalitesine verdiği önemle
+                                tanınır. Özellikle öğle saatlerinde yoğun ilgi gören Peçenek Döner, döner severler için
+                                vazgeçilmez bir lezzet durağıdır. Şehrin birçok noktasında şubeleri bulunmaktadır.</p>
+                            <br><br>
+                            <p class="adres">Emek/Ankara (Genel Merkez)</p><br>
+                            <h4>Hizmet Saatleri</h4>
+                            <p>11:00 - 22:00 (Şubeye ve stoğa göre değişebilir)</p><br>
+                            <h4>Fiyat Aralığı</h4>
+                            <p>Ortalama</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="ankara_foto/Mersinli-Cigerci-Apo.webp" alt="ciğerci apo">
+                <h3>Mersinli Ciğerci Apo</h3>
+                <div class="pop-box">
+                    <a onclick="acModal('cigerci')" class="buton">Daha Fazla</a>
+                </div>
+            </div>
+
+            <div id="cigerciModal" class="modal">
+
+                <div class="modal-backdrop" onclick="kapatModal('cigerci')"></div>
+
+                <div class="modal-content">
+
+                    <span class="close-btn" onclick="kapatModal('cigerci')">&times;</span>
+
+                    <div class="modal-grid">
+                        <div class="modal-resim-bolumu">
+                            <img src="ankara_foto/Mersinli-Cigerci-Apo.webp" alt="Mersinli-Cigerci-Apo">
+                        </div>
+                        <div class="modal-bilgi-bolumu">
+                            <h2>Mersinli Ciğerci Apo</h2>
+                            <p>Mersinli Ciğerci Apo, adından da anlaşılacağı gibi başta ciğer şiş olmak üzere geleneksel
+                                kebap ve et çeşitleri sunan popüler bir restorandır. Ciğerin taze ve lezzetli sunumuyla
+                                öne çıkar. Mersin mutfağının sıcak ve samimi ortamını Ankara'ya taşıyan mekan, özellikle
+                                akşam yemeklerinde yoğun bir müşteri kitlesine sahiptir. Bol çeşitli mezeleri ile
+                                bilinir.</p><br><br>
+                            <p class="adres">Balıkçı Barınağı, Çankaya/Ankara (Genel Şube)</p><br>
+                            <h4>Hizmet Saatleri</h4>
+                            <p>12:00 - 00:00 (Bazı günler sabaha kadar)</p><br>
+                            <h4>Fiyat Aralığı</h4>
+                            <p>Ortalama</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="ankara_foto/Anzelha.webp" alt="Anzelha">
+                <h3>Anzelha</h3>
+                <div class="pop-box">
+                    <a onclick="acModal('anzelha')" class="buton">Daha Fazla</a>
+                </div>
+            </div>
+
+            <div id="anzelhaModal" class="modal">
+
+                <div class="modal-backdrop" onclick="kapatModal('anzelha')"></div>
+
+                <div class="modal-content">
+
+                    <span class="close-btn" onclick="kapatModal('anzelha')">&times;</span>
+
+                    <div class="modal-grid">
+                        <div class="modal-resim-bolumu">
+                            <img src="ankara_foto/Anzelha.webp" alt="anzelha">
+                        </div>
+                        <div class="modal-bilgi-bolumu">
+                            <h2>Anzelha</h2>
+                            <p>Anzelha, Ankara'da geleneksel lezzetleri ve ev yemeklerini modern bir ortamda sunan bir
+                                restorandır. Çoğunlukla Ege ve Akdeniz mutfaklarından ilham alan menüsüyle sağlıklı ve
+                                doyurucu seçenekler sunar. Özellikle zeytinyağlılar ve tencere yemekleri sevenler
+                                tarafından tercih edilir. Aile yemeği ve sakin öğle molaları için ideal bir mekandır.
+                            </p><br><br>
+                            <p class="adres">Çankaya/Ankara</p><br>
+                            <h4>Hizmet Saatleri</h4>
+                            <p>10:00 - 21:00 (Hafta sonu farklılık gösterebilir)</p><br>
+                            <h4>Fiyat Aralığı</h4>
+                            <p>Ortalama</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col about-col">
+                <img src="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" alt="Ankara Rehberi Logo"
+                    class="footer-logo">
+                <p>Ankara'nın tarihi, kültürü ve güncel etkinlikleri hakkında kapsamlı bir rehber. Başkenti keşfetmek
+                    için en doğru adres.</p>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="hakkimda.html">Hakkımızda</a></li>
+                    <li><a href="iletişim.html">İletişim</a></li>
+
+                    <li><a href="galeri.html">Galeri</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col places-col">
+                <h4>Popüler Yerler</h4>
+                <ul>
+                    <li><a href="anitkabir.html">Anıtkabir</a></li>
+                    <li><a href="kale.html">Ankara Kalesi</a></li>
+                    <li><a href="atakule.html">Atakule</a></li>
+                    <li><a href="medeniyetler.html">Anadolu Medeniyetleri Müzesi</a></li>
+                    <li><a href="kugulu.html">Kuğulu Park</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4>Bize Ulaşın</h4>
+                <p><strong>E-posta:</strong> info@ankararehberi.com</p>
+                <p><strong>Telefon:</strong> +90 XXX XXX XX XX</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Ankara Rehberi. Tüm hakları saklıdır.</p>
+
+            <p><a href="#">Gizlilik Politikası</a> | <a href="#">Kullanım Koşulları</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Footer'daki yılı otomatik olarak günceller
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+
+    <script src="java.js"></script>
+
+</body>
+
+</html>

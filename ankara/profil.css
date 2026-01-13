@@ -1,0 +1,115 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    background-color: #1c2541;
+    padding: 40px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+}
+
+#form-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.auth-form label {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    margin-left: 5px;
+    display: block;
+    color: #ffffff;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.auth-form input:focus {
+    box-shadow: 0 0 15px rgba(0, 206, 209, 0.6);
+}
+
+.cyan-btn {
+    background-color: #00ced1;
+    color: #1c2541;
+    border: none;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.cyan-btn:hover {
+    background-color: #00b4b7;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 206, 209, 0.4);
+}
+
+.switch-text {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
+
+.switch-text span {
+    color: #00ced1;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.switch-text span:hover {
+    text-decoration: underline;
+}
+
+#thanks-message {
+    background-color: #e8f5e9 !important;
+    color: #2e7d32 !important;
+    border: 1px solid #c8e6c9;
+    padding: 40px !important;
+    border-radius: 20px !important;
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

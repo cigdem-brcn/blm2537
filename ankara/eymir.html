@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Ankara - Eymir Gölü</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" class="logo">
+            <img src="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" alt="logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Anasayfa</a>
+            <a href="hakkimda.html">Hakkımda</a>
+
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Yerler</a>
+                <ul class="dropdown-content">
+                    <li><a href="müzeler.html">Müzeler</a></li>
+                    <li><a href="parklar.html">Parklar</a></li>
+                    <li><a href="tarihi.html">Tarihi</a></li>
+                </ul>
+            </li>
+
+            <a href="galeri.html">Galeri</a>
+            <a href="iletişim.html">İletişim</a>
+            <a href="profil.html">Profil</a>
+        </nav>
+
+        <div class="buttons">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Ara..."
+                    onkeypress="if(event.key === 'Enter') aramaYap()" style="display: none; font-size: 1.5rem;">
+
+                <button onclick="aramaYap()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="detay-sayfasi">
+        <section class="yer-baslik">
+            <h1>Eymir Gölü</h1>
+            <p class="adres">Oran, Çankaya/Ankara (ODTÜ Arazisi)</p>
+        </section>
+
+        <section class="yer-gorsel">
+            <img src="ankara_foto/eymir-golu.jpg" alt="Eymir Gölü Manzarası">
+        </section>
+
+        <section class="yer-bilgisi">
+            <h2>Hakkında</h2>
+            <p>Eymir Gölü, Ankara'nın güneyinde, ODTÜ arazisi içerisinde yer alan doğal bir vaha gibidir. Şehrin
+                gürültüsünden kaçmak isteyen Ankaralıların en önemli uğrak noktalarından biridir. Çevresi yaklaşık 10-12
+                kilometre olan göl, doğa yürüyüşleri, bisiklet sürüşü ve kürek sporları için oldukça uygundur.</p>
+            <p>Göl çevresindeki ağaçlık alanlar, özellikle hafta sonları kahvaltı yapmak ve temiz hava almak isteyen
+                ziyaretçilerle dolar. Ayrıca göl çevresinde pek çok kuş türünü ve doğal yaşamı gözlemlemek mümkündür.
+            </p>
+
+            <div class="ek-bilgi">
+                <div class="bilgi-kart">
+                    <i class="fas fa-clock"></i>
+                    <h4>Ziyaret Saatleri</h4>
+                    <p>05:00 - 22:00 (Giriş kartı gerekebilir)</p>
+                </div>
+                <div class="bilgi-kart">
+                    <i class="fas fa-bicycle"></i>
+                    <h4>Aktiviteler</h4>
+                    <p>Bisiklet, Yürüyüş, Kahvaltı</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="yer-konum">
+            <h2>Konum</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12257.15465916805!2d32.82942385!3d39.8229452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d3440b5940c209%3A0x412496bb1ae46f52!2zRXltaXIgR8O2bMO8!5e0!3m2!1str!2str!4v1766347413181!5m2!1str!2str"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="kullanici-yorumlari">
+            <h2>Kullanıcı Yorumları (1)</h2>
+            <div class="yorum-formu">
+                <h4>Yorumunuzu Ekleyin</h4>
+                <textarea placeholder="Göl turu ve bisiklet deneyimlerinizi paylaşın..."></textarea>
+                <div class="derecelendirme">
+                    <span>Puanınız:</span>
+                    <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                        class="far fa-star"></i><i class="far fa-star"></i>
+                </div>
+                <button>Yorumu Gönder</button>
+            </div>
+            <script src="java.js"></script>
+
+            <div class="yorum-listesi">
+                <div class="yorum-kart">
+                    <p class="yorum-yazar">**Ayşe Demir** <span class="yorum-tarih">/ 21.12.2025</span></p>
+                    <p class="yorum-metin">Hafta içi çok sakin ve huzurlu oluyor. Bisiklet kiralamak harika bir deneyim,
+                        mutlaka göl etrafında bir tur atmalısınız.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col about-col">
+                <img src="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" alt="Ankara Rehberi Logo"
+                    class="footer-logo">
+                <p>Ankara'nın tarihi, kültürü ve güncel etkinlikleri hakkında kapsamlı bir rehber. Başkenti keşfetmek
+                    için en doğru adres.</p>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="hakkimda.html">Hakkımızda</a></li>
+                    <li><a href="iletişim.html">İletişim</a></li>
+
+                    <li><a href="galeri.html">Galeri</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col places-col">
+                <h4>Popüler Yerler</h4>
+                <ul>
+                    <li><a href="anitkabir.html">Anıtkabir</a></li>
+                    <li><a href="kale.html">Ankara Kalesi</a></li>
+                    <li><a href="atakule.html">Atakule</a></li>
+                    <li><a href="medeniyetler.html">Anadolu Medeniyetleri Müzesi</a></li>
+                    <li><a href="kugulu.html">Kuğulu Park</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4>Bize Ulaşın</h4>
+                <p><strong>E-posta:</strong> info@ankararehberi.com</p>
+                <p><strong>Telefon:</strong> +90 XXX XXX XX XX</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Ankara Rehberi. Tüm hakları saklıdır.</p>
+            <!-- telif hakkı sembölü -->
+            <p><a href="#">Gizlilik Politikası</a> | <a href="#">Kullanım Koşulları</a></p>
+        </div>
+    </footer>
+
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Ankara - Profil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profil.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" alt="logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Anasayfa</a>
+            <a href="hakkimda.html">Hakkımda</a>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Yerler</a>
+                <ul class="dropdown-content">
+                    <li><a href="müzeler.html">Müzeler</a></li>
+                    <li><a href="parklar.html">Parklar</a></li>
+                    <li><a href="tarihi.html">Tarihi</a></li>
+                </ul>
+            </li>
+            <a href="galeri.html">Galeri</a>
+            <a href="iletişim.html">İletişim</a>
+            <a href="profil.html" class="active">Profil</a>
+        </nav>
+        <div class="buttons">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Ara..."
+                    onkeypress="if(event.key === 'Enter') aramaYap()" style="display: none;">
+                <button onclick="aramaYap()"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <script src="java.js"></script>
+    </header>
+
+    <main class="main-content">
+        <div id="auth-box" class="card">
+            <h2 id="form-title">Giriş Yap</h2>
+
+            <form id="auth-form" class="auth-form" onsubmit="showThanksMessage(event)">
+
+                <label for="isim">Kullanıcı Adınız *</label>
+                <input type="text" id="isim" name="isim" required>
+
+                <label for="sifre">Şifreniz *</label>
+                <input type="password" id="sifre" name="sifre" required>
+
+                <button type="submit" id="main-btn" class="cyan-btn">GİRİŞ YAP</button>
+            </form>
+
+            <p class="switch-text">
+                Henüz üye değil misin? <span onclick="toggleForm()" style="cursor:pointer; color:#00ced1;">Kayıt
+                    Ol</span>
+            </p>
+        </div>
+
+        <div id="thanks-message"
+            style="display:none; text-align:center; padding: 40px; color: #2e7d32; font-size: 1.5em; font-weight: bold; background-color: #E8F5E9; border-radius: 20px; border: 2px solid #2ecc71;">
+            Teşekkürler! Girişiniz başarıyla iletildi.
+        </div>
+
+        <script>
+            function showThanksMessage(event) {
+                event.preventDefault();
+
+                document.getElementById('auth-box').style.display = 'none';
+
+                document.getElementById('thanks-message').style.display = 'block';
+
+                return false;
+            }
+
+
+            function toggleForm() {
+                alert("Kayıt olma fonksiyonu.");
+            }
+        </script>
+    </main>
+    <br><br><br><br><br><br>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col about-col">
+                <img src="ankara_foto/Gemini_Generated_Image_n3x47mn3x47mn3x4.png" alt="Ankara Rehberi Logo"
+                    class="footer-logo">
+                <p>Ankara'nın tarihi, kültürü ve güncel etkinlikleri hakkında kapsamlı bir rehber. Başkenti keşfetmek
+                    için en doğru adres.</p>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="hakkimda.html">Hakkımızda</a></li>
+                    <li><a href="iletişim.html">İletişim</a></li>
+
+                    <li><a href="galeri.html">Galeri</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col places-col">
+                <h4>Popüler Yerler</h4>
+                <ul>
+                    <li><a href="anitkabir.html">Anıtkabir</a></li>
+                    <li><a href="kale.html">Ankara Kalesi</a></li>
+                    <li><a href="atakule.html">Atakule</a></li>
+                    <li><a href="medeniyetler.html">Anadolu Medeniyetleri Müzesi</a></li>
+                    <li><a href="kugulu.html">Kuğulu Park</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4>Bize Ulaşın</h4>
+                <p><strong>E-posta:</strong> info@ankararehberi.com</p>
+                <p><strong>Telefon:</strong> +90 XXX XXX XX XX</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Ankara Rehberi. Tüm hakları saklıdır.</p>
+            <!-- telif hakkı sembölü -->
+            <p><a href="#">Gizlilik Politikası</a> | <a href="#">Kullanım Koşulları</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
